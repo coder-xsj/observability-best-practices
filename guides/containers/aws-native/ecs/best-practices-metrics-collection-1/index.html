@@ -9,19 +9,21 @@
       
       
       
+        <link rel="prev" href="../../../../ec2/ec2-monitoring/">
       
-        <link rel="next" href="guides/">
       
-      <link rel="icon" href="assets/aws-logo.png">
+        <link rel="next" href="../best-practices-metrics-collection-2/">
+      
+      <link rel="icon" href="../../../../../assets/aws-logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
     
     
       
-        <title>AWS Observability Best Practices</title>
+        <title>best-practices-metrics-collection-1 - AWS Observability Best Practices</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.ded33207.min.css">
       
       
 
@@ -37,7 +39,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-observability" class="md-skip">
+        <a href="#collecting-system-metrics-with-container-insights" class="md-skip">
           跳转至
         </a>
       
@@ -75,9 +77,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="AWS Observability Best Practices" class="md-header__button md-logo" aria-label="AWS Observability Best Practices" data-md-component="logo">
+    <a href="../../../../.." title="AWS Observability Best Practices" class="md-header__button md-logo" aria-label="AWS Observability Best Practices" data-md-component="logo">
       
-  <img src="assets/aws_logo_dark.png" alt="logo">
+  <img src="../../../../../assets/aws_logo_dark.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              best-practices-metrics-collection-1
             
           </span>
         </div>
@@ -172,9 +174,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="AWS Observability Best Practices" class="md-nav__button md-logo" aria-label="AWS Observability Best Practices" data-md-component="logo">
+    <a href="../../../../.." title="AWS Observability Best Practices" class="md-nav__button md-logo" aria-label="AWS Observability Best Practices" data-md-component="logo">
       
-  <img src="assets/aws_logo_dark.png" alt="logo">
+  <img src="../../../../../assets/aws_logo_dark.png" alt="logo">
 
     </a>
     AWS Observability Best Practices
@@ -200,6 +202,150 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../" class="md-nav__link">
+        Best practices overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../choosing-a-tracing-agent/" class="md-nav__link">
+        Choosing a tracing agent
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ec2/ec2-monitoring/" class="md-nav__link">
+        EC2 Monitoring
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          ECS best practices
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          ECS best practices
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+          AWS Native
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          AWS Native
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
     
   
   
@@ -212,12 +358,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
+          best-practices-metrics-collection-1
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
-        Home
+      <a href="./" class="md-nav__link md-nav__link--active">
+        best-practices-metrics-collection-1
       </a>
       
         
@@ -236,29 +382,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-it-is" class="md-nav__link">
-    What it is¶
+  <a href="#collecting-cluster-level-and-service-level-metrics" class="md-nav__link">
+    Collecting cluster-level and service-level metrics¶
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#problem-it-addresses" class="md-nav__link">
-    Problem it addresses¶
+  <a href="#collecting-instance-level-metrics" class="md-nav__link">
+    Collecting instance-level metrics¶
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-it-helps" class="md-nav__link">
-    How it helps¶
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-you-will-find-here" class="md-nav__link">
-    What you will find here¶
+  <a href="#analyzing-performance-log-events-with-logs-insights" class="md-nav__link">
+    Analyzing performance log events with Logs Insights¶
   </a>
   
 </li>
@@ -270,48 +409,6 @@
     </li>
   
 
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-          Guides
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Guides
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guides/" class="md-nav__link">
-        Best practices overview
-      </a>
-    </li>
-  
-
             
           
             
@@ -320,103 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/choosing-a-tracing-agent/" class="md-nav__link">
-        Choosing a tracing agent
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guides/ec2/ec2-monitoring/" class="md-nav__link">
-        EC2 Monitoring
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
-          ECS best practices
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_4">
-          <span class="md-nav__icon md-icon"></span>
-          ECS best practices
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
-          AWS Native
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_4_1">
-          <span class="md-nav__icon md-icon"></span>
-          AWS Native
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guides/containers/aws-native/ecs/best-practices-metrics-collection-1/" class="md-nav__link">
-        best-practices-metrics-collection-1
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guides/containers/aws-native/ecs/best-practices-metrics-collection-2/" class="md-nav__link">
+      <a href="../best-practices-metrics-collection-2/" class="md-nav__link">
         best-practices-metrics-collection-2
       </a>
     </li>
@@ -479,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="signals/logs/" class="md-nav__link">
+      <a href="../../../../../signals/logs/" class="md-nav__link">
         Logs
       </a>
     </li>
@@ -493,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="signals/logs/metrics/" class="md-nav__link">
+      <a href="../../../../../signals/logs/metrics/" class="md-nav__link">
         Metrics
       </a>
     </li>
@@ -515,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="contributors/" class="md-nav__link">
+      <a href="../../../../../contributors/" class="md-nav__link">
         Contributors
       </a>
     </li>
@@ -549,29 +550,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-it-is" class="md-nav__link">
-    What it is¶
+  <a href="#collecting-cluster-level-and-service-level-metrics" class="md-nav__link">
+    Collecting cluster-level and service-level metrics¶
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#problem-it-addresses" class="md-nav__link">
-    Problem it addresses¶
+  <a href="#collecting-instance-level-metrics" class="md-nav__link">
+    Collecting instance-level metrics¶
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-it-helps" class="md-nav__link">
-    How it helps¶
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-you-will-find-here" class="md-nav__link">
-    What you will find here¶
+  <a href="#analyzing-performance-log-events-with-logs-insights" class="md-nav__link">
+    Analyzing performance log events with Logs Insights¶
   </a>
   
 </li>
@@ -591,7 +585,7 @@
                   
 
   
-    <a href="https://github.com/coder-xsj/observability-best-practices/edit/main/docs/index.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/coder-xsj/observability-best-practices/edit/main/docs/guides/containers/aws-native/ecs/best-practices-metrics-collection-1.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
     </a>
@@ -599,27 +593,35 @@
   
 
 
-<h1 id="what-is-observability">What is observability<a href="https://aws-observability.github.io/observability-best-practices/#what-is-observability">¶</a></h1>
-<h2 id="what-it-is">What it is<a href="https://aws-observability.github.io/observability-best-practices/#what-it-is">¶</a></h2>
-<p>Observability is the capability to continuously generate and discover actionable insights based on signals from the system under observation. In other words, observability allows users to understand a system’s state from its external output and take (corrective) action.</p>
-<h2 id="problem-it-addresses">Problem it addresses<a href="https://aws-observability.github.io/observability-best-practices/#problem-it-addresses">¶</a></h2>
-<p>Computer systems are measured by observing low-level signals such as CPU time, memory, disk space, and higher-level and business signals, including API response times, errors, transactions per second, etc.</p>
-<p>The observability of a system has a significant impact on its operating and development costs. Observable systems yield meaningful, actionable data to their operators, allowing them to achieve favorable outcomes (faster incident response, increased developer productivity) and less toil and downtime.</p>
-<h2 id="how-it-helps">How it helps<a href="https://aws-observability.github.io/observability-best-practices/#how-it-helps">¶</a></h2>
-<p>Understanding that more information does not necessarily translate into a more observable system is pivotal. In fact, sometimes, the amount of information generated by a system can make it harder to identify valuable health signals from the noise generated by the application. Observability requires the right data at the right time for the right consumer (human or piece of software) to make the right decisions.</p>
-<h2 id="what-you-will-find-here">What you will find here<a href="https://aws-observability.github.io/observability-best-practices/#what-you-will-find-here">¶</a></h2>
-<p>This site contains our best practices for observability: what do to, what <em>not</em> to do, and a collection of recipes on how to do them. Most of the content here is vendor agnostic and represents what any good observability solution will provide.</p>
-<p>It is important that you consider observability as a <em>solution</em> though and not a <em>product</em>. Observability comes from your practices, and is integral to strong development and DevOps leadership. A well-observed application is one that places observability as a principal of operations, similar to how security must be at the forefront of how you organize a project. Attempting to “bolt-on” observability after the fact is an anti-pattern and meets with less success.</p>
-<p>This site is organized into four categories:</p>
-<ol>
-<li><a href="https://aws-observability.github.io/observability-best-practices/guides/">Best practices by solution, such as for dashboarding, application performance monitoring, or containers</a></li>
-<li><a href="https://aws-observability.github.io/observability-best-practices/signals/logs/">Best practices for the use of different data types, such as for logs or traces</a></li>
-<li><a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/">Best practices for specific AWS tools (though these are largely fungible to other vendor products as well)</a></li>
-<li><a href="https://aws-observability.github.io/observability-best-practices/recipes/">Curated recipes for observability with AWS</a></li>
-</ol>
-<p>Success</p>
-<p>This site is based on real world use cases that AWS and our customers have solved for.</p>
-<p>Observability is at the heart of modern application development, and a critical consideration when operating distributed systems, such as microservices, or complex applications with many external integrations. We consider it to be a leading indicator of a healthy workload, and we are pleased to share our experiences with you here!</p>
+<h1 id="collecting-system-metrics-with-container-insights">Collecting system metrics with Container Insights<a href="https://aws-observability.github.io/observability-best-practices/guides/containers/aws-native/ecs/best-practices-metrics-collection-1/#collecting-system-metrics-with-container-insights">¶</a></h1>
+<p>System metrics pertain to low-level resources that include physical components on a server such as CPU, memory, disks and network interfaces. Use <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html">CloudWatch Container Insights</a> to collect, aggregate, and summarize system metrics from containerized applications deployed to Amazon ECS. Container Insights also provides diagnostic information, such as container restart failures, to help isolate issues and resolve them quickly. It is available for Amazon ECS clusters deployed on EC2 and Fargate.</p>
+<p>Container Insights collects data as performance log events using <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format.html">embedded metric format</a>. These performance log events are entries that use a structured JSON schema that enables high-cardinality data to be ingested and stored at scale. From this data, CloudWatch creates aggregated metrics at the cluster, node, service and task level as CloudWatch metrics.</p>
+<p>Note</p>
+<p>For Container Insights metrics to appear in CloudWatch, you must enable Container Insights on your Amazon ECS clusters. This can be done either at the account level or at the individual cluster level. To enable at the account level, use the following AWS CLI command:</p>
+<pre><code>aws ecs put-account-setting --name &quot;containerInsights&quot; --value &quot;enabled
+</code></pre>
+<p>To enable at the individual cluster level, use the following AWS CLI command:</p>
+<pre><code>aws ecs update-cluster-settings --cluster $CLUSTER_NAME --settings name=containerInsights,value=enabled
+</code></pre>
+<h2 id="collecting-cluster-level-and-service-level-metrics">Collecting cluster-level and service-level metrics<a href="https://aws-observability.github.io/observability-best-practices/guides/containers/aws-native/ecs/best-practices-metrics-collection-1/#collecting-cluster-level-and-service-level-metrics">¶</a></h2>
+<p>By default, CloudWatch Container Insights collects metrics at the task, service and cluster level. The Amazon ECS agent collects these metrics for each task on an EC2 container instance (for both ECS on EC2 and ECS on Fargate) and sends them to CloudWatch as performance log events. You don't need to deploy any agents to the cluster. These log events from which the metrics are extracted are collected under the CloudWatch log group named <em>/aws/ecs/containerinsights/$CLUSTER_NAME/performance</em>. The complete list of metrics extracted from these events are <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-metrics-ECS.html">documented here</a>. The metrics that Container Insights collects are readily viewable in pre-built dashboards available in the CloudWatch console by selcting <em>Container Insights</em> from the navigation page and then selecting <em>performance monitoring</em> from the dropdown list. They are also viewable in the <em>Metrics</em> section of the CloudWatch console.</p>
+<p><img alt="Container Insights metrics dashboard" src="https://aws-observability.github.io/observability-best-practices/images/ContainerInsightsMetrics.png" /></p>
+<p>Note</p>
+<p>If you're using Amazon ECS on an Amazon EC2 instance, and you want to collect network and storage metrics from Container Insights, launch that instance using an AMI that includes Amazon ECS agent version 1.29.</p>
+<p>Warning</p>
+<p>Metrics collected by Container Insights are charged as custom metrics. For more information about CloudWatch pricing, see <a href="https://aws.amazon.com/cloudwatch/pricing/">Amazon CloudWatch Pricing</a></p>
+<h2 id="collecting-instance-level-metrics">Collecting instance-level metrics<a href="https://aws-observability.github.io/observability-best-practices/guides/containers/aws-native/ecs/best-practices-metrics-collection-1/#collecting-instance-level-metrics">¶</a></h2>
+<p>Deploying the CloudWatch agent to an Amazon ECS cluster hosted on EC2, allows you to collect instance-level metrics from the cluster. The agent is deployed as a daemon service and sends instance-level metrics as performance log events from each EC2 container instance in the cluster. The complete list of instance-level extracted from these events are <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-metrics-ECS.html">documented here</a></p>
+<p>Info</p>
+<p>Steps to deploy the CloudWatch agent to an Amazon ECS cluster to collect instance-level metrics are documented in the <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/deploy-container-insights-ECS-instancelevel.html">Amazon CloudWatch User Guide</a>. Note that this option is not availavble for Amazon ECS clusters that are hosted on Fargate.</p>
+<h2 id="analyzing-performance-log-events-with-logs-insights">Analyzing performance log events with Logs Insights<a href="https://aws-observability.github.io/observability-best-practices/guides/containers/aws-native/ecs/best-practices-metrics-collection-1/#analyzing-performance-log-events-with-logs-insights">¶</a></h2>
+<p>Container Insights collects metrics by using performance log events with embedded metric format. Each log event may contain performance data observed on system resources such as CPU and memory or ECS resources such as tasks and services. Examples of performance log events that Container Insights collects from an Amazon ECS at the cluster, service, task and container level are <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-reference-performance-logs-ECS.html">listed here</a>. CloudWatch generates metrics based only on some of the performance data in these log events. But you can use these log events to perform a deeper analysis of the performance data using CloudWatch Logs Insights queries.</p>
+<p>The user interface to run Logs Insights queries is available in the CloudWatch console by selecting <em>Logs Insights</em> from the navigation page. When you select a log group, CloudWatch Logs Insights automatically detects fields in the performance log events in the log group and displays them in <em>Discovered</em> fields in the right pane. The results of a query execution are displayed as a bar graph of log events in this log group over time. This bar graph shows the distribution of events in the log group that matches your query and time range.</p>
+<p><img alt="Logs Insights dashboard" src="https://aws-observability.github.io/observability-best-practices/images/LogInsights.png" /></p>
+<p>Info</p>
+<p>Here's a sample Logs Insights query to display container-level metrics for CPU and memory usage.</p>
+<pre><code>stats avg(CpuUtilized) as CPU, avg(MemoryUtilized) as Mem by TaskId, ContainerName | sort Mem, CPU desc
+</code></pre>
 
 
 
@@ -657,10 +659,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.action.edit"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.action.edit"], "search": "../../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
     
   </body>
