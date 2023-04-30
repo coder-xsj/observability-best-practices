@@ -1,0 +1,12 @@
+site_name: AWS Observability Best Practices
+theme:
+  name: material
+  logo: assets/aws_logo_dark.png
+  language: zh
+  icon:
+    repo: fontawesome/brands/github
+  repo_url: git@github.com:coder-xsj/observability-best-practices.git
+  repo_name: coder-xsj/observability-best-practices
+
+
+
