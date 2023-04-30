@@ -2,11 +2,34 @@ site_name: AWS Observability Best Practices
 theme:
   name: material
   logo: assets/aws_logo_dark.png
-  language: zh
   icon:
-    repo: fontawesome/brands/github
-  repo_url: git@github.com:coder-xsj/observability-best-practices.git
-  repo_name: coder-xsj/observability-best-practices
+    repo: fontawesome/brands/github-alt
+    edit: material/pencil 
+    view: material/eye
+  favicon: assets/aws-logo.png
+  language: zh
+  features:
+    - content.action.edit
+repo_url: https://github.com/coder-xsj/observability-best-practices
+repo_name: coder-xsj/observability-best-practices
+edit_uri: edit/main/docs/
 
 
+nav:
+- Home: index.md
+- Guides:
+    - Best practices overview:  guides/index.md
+    - Choosing a tracing agent: guides/choosing-a-tracing-agent.md
+    - EC2 Monitoring: guides/ec2/ec2-monitoring.md
+    - ECS best practices:
+      - AWS Native:
+          - best-practices-metrics-collection-1: guides/containers/aws-native/ecs/best-practices-metrics-collection-1.md
+          - best-practices-metrics-collection-2: guides/containers/aws-native/ecs/best-practices-metrics-collection-2.md
+- Data types:
+    - Logs: signals/logs/index.md
+    - Metrics: signals/logs/metrics.md
 
+- Contributors: contributors/index.md
+
+plugins:
+  - search
