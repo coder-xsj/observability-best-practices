@@ -27,8 +27,41 @@ This site is organized into four categories:
 3. [Best practices for specific AWS tools (though these are largely fungible to other vendor products as well)](https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/)
 4. [Curated recipes for observability with AWS](https://aws-observability.github.io/observability-best-practices/recipes/)
 
-Success
+!!! Success
+     This site is based on real world use cases that AWS and our customers have solved for.
+    Observability is at the heart of modern application development, and a critical consideration when operating distributed systems, such as microservices, or complex applications with many external integrations. We consider it to be a leading indicator of a healthy workload, and we are pleased to share our experiences with you here!
 
-This site is based on real world use cases that AWS and our customers have solved for.
 
-Observability is at the heart of modern application development, and a critical consideration when operating distributed systems, such as microservices, or complex applications with many external integrations. We consider it to be a leading indicator of a healthy workload, and we are pleased to share our experiences with you here!
+
+[Hover me](https://example.com "I'm a tooltip!")
+
+
+徐升进
+Amazon EC2 的功能
+Amazon EC2 提供以下功能：
+
+虚拟计算环境，也称为实例
+
+实例的预配置模板，也称为 Amazon 系统映像 (AMI)，其中包含您的服务器需要的程序包（包括操作系统和其他软件）。
+
+实例 CPU、内存、存储和网络容量的多种配置，也称为实例类型
+
+使用密钥对的实例的安全登录信息（AWS 存储公有密钥，您在安全位置存储私有密钥）
+
+临时数据（停止、休眠或终止实例时会删除这些数据）的存储卷，也称为实例存储卷
+
+使用 Amazon Elastic Block Store (Amazon EBS) 的数据的持久性存储卷，也称为 Amazon EBS 卷。
+
+用于存储资源的多个物理位置，例如实例和 Amazon EBS 卷，也称为区域 和可用区
+
+防火墙，让您可以指定协议、端口，以及能够使用安全组到达您的实例的源 IP 范围
+
+用于动态云计算的静态 IPv4 地址，称为弹性 IP 地址
+
+元数据，也称为标签，您可以创建元数据并分配给您的 Amazon EC2 资源
+
+您可以创建的虚拟网络，这些网络与其余 AWS 云在逻辑上隔离，并且您可以选择连接到您自己的网络，也称为 Virtual Private Cloud (VPC)。
+
+有关 Amazon EC2 功能的更多信息，请参阅 Amazon EC2 产品页。
+
+有关在 AWS 上运行网站的更多信息，请参阅 Web 托管。
