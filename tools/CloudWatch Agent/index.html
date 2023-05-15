@@ -10,16 +10,16 @@
       
       
       
-      <link rel="icon" href="/assets/aws-logo.png">
+      <link rel="icon" href="../../assets/aws-logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
     
     
       
-        <title>AWS Observability Best Practices</title>
+        <title>CloudWatch Agent[¶](https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#cloudwatch-agent) - AWS Observability Best Practices</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
       
       
 
@@ -35,7 +35,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -56,6 +56,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#cloudwatch-agent" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -68,9 +73,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="/." title="AWS Observability Best Practices" class="md-header__button md-logo" aria-label="AWS Observability Best Practices" data-md-component="logo">
+    <a href="../.." title="AWS Observability Best Practices" class="md-header__button md-logo" aria-label="AWS Observability Best Practices" data-md-component="logo">
       
-  <img src="/assets/aws_logo_dark.png" alt="logo">
+  <img src="../../assets/aws_logo_dark.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -86,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              CloudWatch Agent[¶](https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#cloudwatch-agent)
             
           </span>
         </div>
@@ -167,9 +172,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="AWS Observability Best Practices" class="md-nav__button md-logo" aria-label="AWS Observability Best Practices" data-md-component="logo">
+    <a href="../.." title="AWS Observability Best Practices" class="md-nav__button md-logo" aria-label="AWS Observability Best Practices" data-md-component="logo">
       
-  <img src="/assets/aws_logo_dark.png" alt="logo">
+  <img src="../../assets/aws_logo_dark.png" alt="logo">
 
     </a>
     AWS Observability Best Practices
@@ -197,7 +202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -240,7 +245,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/guides/">Guides</a>
+          <a href="../../guides/">Guides</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -263,7 +268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guides/" class="md-nav__link">
+      <a href="../../guides/" class="md-nav__link">
         Best practices overview
       </a>
     </li>
@@ -277,7 +282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guides/choosing-a-tracing-agent/" class="md-nav__link">
+      <a href="../../guides/choosing-a-tracing-agent/" class="md-nav__link">
         Choosing a tracing agent
       </a>
     </li>
@@ -291,7 +296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guides/ec2/ec2-monitoring/" class="md-nav__link">
+      <a href="../../guides/ec2/ec2-monitoring/" class="md-nav__link">
         EC2 Monitoring
       </a>
     </li>
@@ -369,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guides/containers/aws-native/ecs/best-practices-metrics-collection-1/" class="md-nav__link">
+      <a href="../../guides/containers/aws-native/ecs/best-practices-metrics-collection-1/" class="md-nav__link">
         best-practices-metrics-collection-1
       </a>
     </li>
@@ -383,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guides/containers/aws-native/ecs/best-practices-metrics-collection-2/" class="md-nav__link">
+      <a href="../../guides/containers/aws-native/ecs/best-practices-metrics-collection-2/" class="md-nav__link">
         best-practices-metrics-collection-2
       </a>
     </li>
@@ -450,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tools/cloudwatch_agent/" class="md-nav__link">
+      <a href="../cloudwatch_agent/" class="md-nav__link">
         CloudWatch Agent
       </a>
     </li>
@@ -492,7 +497,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/signals/logs/">Data types</a>
+          <a href="../../signals/logs/">Data types</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -515,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/signals/logs/metrics/" class="md-nav__link">
+      <a href="../../signals/logs/metrics/" class="md-nav__link">
         Metrics
       </a>
     </li>
@@ -537,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/contributors/" class="md-nav__link">
+      <a href="../../contributors/" class="md-nav__link">
         Contributors
       </a>
     </li>
@@ -561,6 +566,57 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-the-cloudwatch-agent" class="md-nav__link">
+    Deploying the CloudWatch agent¶
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-outside-of-aws" class="md-nav__link">
+    Deployment outside of AWS¶
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-of-private-endpoints" class="md-nav__link">
+    Use of private endpoints¶
+  </a>
+  
+    <nav class="md-nav" aria-label="Use of private endpoints¶">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-a-vpc" class="md-nav__link">
+    From a VPC¶
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-on-premises-or-other-cloud-environments" class="md-nav__link">
+    From on-premises or other cloud environments¶
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -572,8 +628,62 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+    
+      
+    
+    <a href="https://github.com/coder-xsj/observability-best-practices/raw/main/docs/tools/CloudWatch Agent.md" title="查看本页的源代码" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+    </a>
+  
+
+
+<h1 id="cloudwatch-agent">CloudWatch Agent<a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#cloudwatch-agent">¶</a></h1>
+<h2 id="deploying-the-cloudwatch-agent">Deploying the CloudWatch agent<a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#deploying-the-cloudwatch-agent">¶</a></h2>
+<p>The CloudWatch agent can be deployed as a single installation, using a distributed configuration file, layering multiple configuration files, and entirely though automation. Which approach is appropriate for you depends on your needs. <a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#fn:1">1</a></p>
+<p>Success</p>
+<p>Deployment to Windows and Linux hosts both have the capability to store and retrieve their configurations into <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance-fleet.html">Systems Manager Parameter Store</a>. Treating the deployment of CloudWatch agent configuration through this automated mechanism is a best practice.</p>
+<p>Tip</p>
+<p>Alternatively, the configuration files for the CloudWatch agent can be deployed through the automation tool of your choice (<a href="https://www.ansible.com/">Ansible</a>, <a href="https://puppet.com/">Puppet</a>, etc.). The use of Systems Manager Parameter Store is not required, though it does simplify management.</p>
+<h2 id="deployment-outside-of-aws">Deployment outside of AWS<a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#deployment-outside-of-aws">¶</a></h2>
+<p>The use of the CloudWatch agent is <em>not</em> limited to within AWS, and is supported both on-premises and in other cloud environments. There are two additional considerations that must be heeded when using the CloudWatch agent outside of AWS though:</p>
+<ol>
+<li>Setting up IAM credentials<a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#fn:2">2</a> to allow agent to make required API calls. Even in EC2 there is no unauthenticated access to the CloudWatch APIs<a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#fn:5">5</a>.</li>
+<li>Ensure agent has connectivity to CloudWatch, CloudWatch Logs, and other AWS endpoints<a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#fn:3">3</a> using a route that meets your requirements. This can be either through the Internet, using <a href="https://aws.amazon.com/directconnect/">AWS Direct Connect</a>, or through a <a href="https://docs.aws.amazon.com/vpc/latest/privatelink/concepts.html">private endpoint</a> (typically called a <em>VPC endpoint</em>).</li>
+</ol>
+<p>Info</p>
+<p>Transport between your environment(s) and CloudWatch needs to match your governance and security requirements. Broadly speaking, using private endpoints for workloads outside of AWS meets the needs of customers in even the most strictly regulated industries. However, the majority of customers will be served well through our public endpoints.</p>
+<h2 id="use-of-private-endpoints">Use of private endpoints<a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#use-of-private-endpoints">¶</a></h2>
+<p>In order to push metrics and logs, the CloudWatch agent must have connectivity to the <em>CloudWatch</em>, and <em>CloudWatch Logs</em> endpoints. There are several ways to achieve this based on where the agent is installed.</p>
+<h3 id="from-a-vpc">From a VPC<a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#from-a-vpc">¶</a></h3>
+<p>a. You can make use of <em>VPC Endpoints</em> (for CloudWatch and CloudWatch Logs) in order to establish fully private and secure connection between your VPC and CloudWatch for the agent running on EC2. With this approach, agent traffic never traverses the internet.</p>
+<p>b. Another alternative is to have a public <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html">NAT gateway</a> through which private subnets can connect to the internet, but cannot receive unsolicited inbound connections from the internet.</p>
+<p>Note</p>
+<p>Please note with this approach agent traffic will be logically routed via internet.</p>
+<p>c. If you don’t have requirement to establish private or secure connectivity beyond the existing TLS and <a href="https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html">Sigv4</a> mechanisms, the easiest option is to have <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html">Internet Gateway</a> to provide connectivity to our endpoints.</p>
+<h3 id="from-on-premises-or-other-cloud-environments">From on-premises or other cloud environments<a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#from-on-premises-or-other-cloud-environments">¶</a></h3>
+<p>a. Agents running outside of AWS can establish connectivity to CloudWatch public endpoints over the internet(via their own network setup) or Direct Connect <a href="https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html">Public VIF</a>.</p>
+<p>b. If you require that agent traffic not route through the internet you can leverage <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html">VPC Interface endpoints</a>, powered by AWS PrivateLink, to extend the private connectivity all the way to your on-premises network using Direct Connect Private VIF or VPN. Your traffic is not exposed to the internet, eliminating threat vectors.</p>
+<p>Success</p>
+<p>You can add <a href="https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-on-premises-temp-credentials/">ephemeral AWS access tokens</a> for use by the CloudWatch agent by using credentials obtained from the <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html">AWS Systems Manager agent</a>.</p>
+<hr />
+<ol>
+<li>See <a href="https://aws.amazon.com/blogs/opensource/getting-started-with-open-source-amazon-cloudwatch-agent/">Getting started with open source Amazon CloudWatch Agent</a> for a blog that gives guidance for CloudWatch agent use and deployment. <a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#fnref:1">↩</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-commandline-fleet.html#install-CloudWatch-Agent-iam_user-first">Guidance on setting credentials for agents running on-premises and in other cloud environments</a> <a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#fnref:2">↩</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-commandline-fleet.html#install-CloudWatch-Agent-internet-access-first-cmd">How to verify connectivity to the CloudWatch endpoints</a> <a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#fnref:3">↩</a></li>
+<li><a href="https://aws.amazon.com/blogs/networking-and-content-delivery/hybrid-networking-using-vpc-endpoints-aws-privatelink-and-amazon-cloudwatch-for-financial-services/">A blog for on-premises, private connectivity</a> <a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#fnref:4">↩</a></li>
+<li>Use of all AWS APIs related to observability is typically accomplished by an <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html">instance profile</a> - a mechanism to grant temporary access credentials to instances and containers running in AWS. <a href="https://aws-observability.github.io/observability-best-practices/tools/cloudwatch_agent/#fnref:5">↩</a></li>
+</ol>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -605,10 +715,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["content.action.view", "navigation.instant", "navigation.tracking", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tooltips"], "search": "/assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "navigation.instant", "navigation.tracking", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
       
     
   </body>
